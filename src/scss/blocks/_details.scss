@@ -1,0 +1,63 @@
+.details {
+  visibility: hidden;
+  position: fixed;
+  top:0;
+  left: 0;
+  width:0;
+  height:0;
+  opacity: 0;
+  color: yellow;
+  //background: linear-gradient(to bottom, #7f00ff 50%, #663399 50%);
+
+  &_open {
+    visibility: visible;
+    display: block;
+    width:100vw;
+    height:100vh;
+    transition: width, height .6s ease;
+    opacity: 1;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 32px;
+    cursor: pointer;
+    color: yellow;
+    z-index: 1;
+  }
+
+  &__name {
+    position: relative;
+    height: 0;
+    background-color: #7f00ff;
+    font-size: 3em;
+    text-transform: uppercase;
+
+    & > span {
+      position: absolute;
+      bottom: 0;
+      margin-left: 100px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__description {
+    height: 0;
+    background-color: #639;
+  }
+
+  &__height {
+    height: 50vh;
+    transition: height .6s ease;
+  }
+
+  &__image {
+    position: absolute;
+    height: 50%;
+    top: calc(50% - 50%/2);
+    right: 10%;
+  }
+}
+

@@ -1,0 +1,60 @@
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+  }
+
+  &__item {
+    flex: 0 0 calc(100%/3);
+    max-width: calc(100%/3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  &__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: yellow;
+    text-align: center;
+    height: 100%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-size: 32px;
+
+    &:hover {
+      color: #663399;
+      background-color: yellow;
+      transition: color, background-color .6s ease;
+    }
+
+    &_left {
+      left: 0;
+    }
+
+    &_right {
+      right: 0;
+    }
+  }
+
+  &__image {
+    height: 70%;
+  }
+
+  &__name {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    color: yellow;
+    text-transform: uppercase;
+  }
+}
