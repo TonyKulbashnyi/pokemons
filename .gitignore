@@ -2,7 +2,6 @@ node_modules
 .idea
 .babelrc
 .eslintrc
-package.json
 package-lock.json
 webpack.config.js
 
