@@ -33,8 +33,15 @@ export let constants = {
     detailName: 'details__name',
 
     far: 'far',
+    fas: 'fas',
     faStar: 'fa-star',
     favoriteItem: 'favorite-item',
+    favorItem: '.favorite-item',
+    favoriteItemSelected: 'favorite-item-selected',
+
+    sortButton: '.sort__button',
+    favoriteButton: '.favorite__button',
+
 
 
 

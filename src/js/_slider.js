@@ -1,11 +1,9 @@
 import {constants} from './_const'
 
 
+export function multiItemSlider() {
 
-export  function multiItemSlider() {
-
-     return  function () {
-         console.log('PLEASE END OF STACK!!!');
+    return function () {
 
         let sliderWrapper = document.querySelector(constants.sliderWrapper),
             sliderItems = document.querySelectorAll(constants.sliderItem),
